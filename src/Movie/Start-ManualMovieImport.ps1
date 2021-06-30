@@ -1,3 +1,33 @@
+
+<#
+TODO POST to /manualimport before post to /command
+movieId
+Path
+file id from above command
+Language @() @{
+    id: 0 
+    name: 
+    namelower
+}
+
+quality @{
+    quality@{
+        name
+        source
+        resolution
+        id / qualityID? Check API?
+        modifier????
+    }
+    Revision @{
+        isrepack // bool but as a string
+        real // bool but as an int
+        version // bool but as an int??
+    }
+}
+
+This is so dumb
+#>
+
 function Start-ManualMovieImport {
     param (
         [Alias("id")]
